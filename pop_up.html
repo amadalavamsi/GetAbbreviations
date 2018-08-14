@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="AbApp" ng-controller="AbController">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="jquery.min.js"></script>
+<script src="angular.js"></script>
+<script src="app.js"></script>
+</head>
+<body>
+
+<div class="topnav">
+ <h3 align="center">Search any abbreviation here</h3>
+  <div class="search-container">   
+      <input type="text" placeholder="Search whatever you want.." ng-model="findAbb.name" class="searchbar">
+      <button type="submit" ng-click="findWord(findAbb)" class="mybtn">Search</button>
+  
+  </div>
+  <div class="textbox">
+  <h3>{{wikiData.title}}<img src="Sound-512.png" height="20px" width="18px" ng-click="textToSound()" ng-if="wikiData.title != null" id="sound_icon"></h3><hr>
+   <div ng-repeat= "x in data" id="dataDiv">
+	<a href="" ng-click="connectWiki(x)" id="anchorData">{{x}}</a><hr id="hrRow">
+   </div>
+   <p ng-if="wikiData.extract != null">{{wikiData.extract}}</p>
+   <p ng-if="error != null" style="color:red;">{{error}}</p>
+  </div>
+ 
+</div>
+<!--<button name="mybtn" value="click" ng-click="pageParser()">Click me</button>-->
+</body>
+</html>

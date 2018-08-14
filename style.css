@@ -1,0 +1,55 @@
+body{
+margin:0;
+padding:0;
+width:300px;
+height:100px;
+}
+.searchbar{
+height:30px;
+float:left;
+margin-left:20px;
+width:200px;
+border-radius:0px;
+}
+.mybtn{
+height:35px;
+background-color:blue;
+color:#fff;
+border:1px blue;
+}
+.textbox{
+    padding: 5px;
+    margin: 5px;
+    font-family: "Open Sans",Arial,"Lucida Grande",sans-serif;
+	line-height: 1.5em;
+    font-size: 13px;
+}
+#sound_icon{
+    float: right;
+    margin: 4px 15px;
+	position:inherit;
+	text-align:center;
+}
+#anchorData{
+	padding:5px;
+	text-decoration:none;
+	font-family : "Open Sans",Arial,"Lucida Grande",sans-serif;
+	font-size : 15px;
+	color: #515161;
+	margin:10 20pxpx;
+}
+#dataDiv{
+	height: 25px;
+    margin: 5px 0px;
+	border-color:
+}
+#dataDiv:hover{
+	background-color : #eae6e6;
+}
+#anchorData:hover{
+	text-decoration:underline;
+	color: blue;
+}
+#hrRow{
+	border-color: #f3f3f31f;
+}

@@ -1,0 +1,24 @@
+  {
+    "name": "Abbrevations Example",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "manifest_version": 2,
+	 "background": {
+      "scripts": ["app.js","angular.js"],
+      "persistent": false
+    },
+	 "browser_action": {
+   "default_icon": "12580.png",
+   "default_popup": "pop_up.html"
+  },
+  "permissions": [
+  "http://*/*",
+  "https://*/*"
+    
+	
+  ]
+	 
+	
+	 
+	
+  }
